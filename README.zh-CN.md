@@ -59,7 +59,7 @@ SMS-Man 是一个在线虚拟号码和短信接收平台。用户可以根据平
 5. 如果短信成功送达，在账户后台查看收到的消息。
 6. 根据官方规则取消、管理激活订单或结束号码租用。
 
-具体界面和操作规则请参考 [SMS-Man 官方帮助中心]([https://sms-man.com/help](https://sms-man.com/cn/help?ref=ceLde1noXEm-)。
+具体界面和操作规则请参考 [SMS-Man 官方帮助中心](https://sms-man.com/cn/help?ref=ceLde1noXEm-)。
 
 ## SMS-Man 主要功能
 
@@ -175,7 +175,7 @@ SMS-Man 的价格和号码库存可能因国家、应用、号码类型、租用
 - 取消和退款条件；
 - 目标服务对虚拟号码的限制。
 
-如有支付或退款问题，请查看 [SMS-Man 官方帮助中心](https://sms-man.com/cn/help)及官网当前政策页面。历史博客文章或社区 README 不能替代服务商现行退款政策。
+如有支付或退款问题，请查看 [SMS-Man 官方帮助中心](https://sms-man.com/cn/help?ref=ceLde1noXEm-)及官网当前政策页面。历史博客文章或社区 README 不能替代服务商现行退款政策。
 
 ## 隐私与安全注意事项
 

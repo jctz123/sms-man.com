@@ -233,7 +233,7 @@ A temporary or rented number may not remain under your control indefinitely. For
 
 ### Where can I get support?
 
-Use the contact and support options linked from the [official SMS-Man website](https://sms-man.com/) and [help center](https://sms-man.com/help?ref=ceLde1noXEm-).
+Use the contact and support options linked from the [official SMS-Man website](https://go2lk.pages.dev/ea9735) and [help center](https://sms-man.com/help?ref=ceLde1noXEm-).
 
 ## Official resources
 
