@@ -2,31 +2,45 @@
 
 **Languages:** [English](README.md) · 简体中文 · [Tiếng Việt](README.vi.md)
 
-[SMS-Man](https://sms-man.com/) 是一个提供虚拟电话号码、在线接收短信验证码及号码租用服务的平台。本仓库是一个**独立的社区信息整理项目**，用于介绍 SMS-Man 的功能、使用流程、API 文档入口以及使用虚拟号码时需要注意的问题，并非 SMS-Man 官方源码或官方文档。
+[SMS-Man](https://go2lk.pages.dev/ea9735) 是一个提供虚拟电话号码、在线接收短信验证码及号码租用服务的平台。本仓库是一个**独立的社区信息整理项目**，用于介绍 SMS-Man 的功能、使用流程、API 文档入口以及使用虚拟号码时需要注意的问题，并非 SMS-Man 官方源码或官方文档。
 
 如果你正在了解 SMS-Man 接码、SMS-Man 虚拟号码、在线接收短信、临时号码或 SMS-Man API，可以通过本 README 快速了解基本信息。
 
-- **官方网站：** https://sms-man.com/
-- **官方帮助中心：** https://sms-man.com/cn/help
-- **官方 API 文档：** https://sms-man.com/cn/api
-- **兼容 API 文档：** https://sms-man.com/cn/api/compatible
+- **官方网站：** [https://sms-man.com/](https://go2lk.pages.dev/ea9735)
+- **官方帮助中心：** [https://sms-man.com/help](https://sms-man.com/help?ref=ceLde1noXEm-)
+- **官方 API 文档：** [https://sms-man.com/api](https://sms-man.com/api?ref=ceLde1noXEm-)
+- **兼容 API 文档：** [https://sms-man.com/api/compatible](https://sms-man.com/api/compatible?ref=ceLde1noXEm-)
 
 > **注意：** SMS-Man 属于第三方商业服务。国家、应用、号码库存、价格、支付方式、产品规则和 API 行为都可能发生变化。购买或开发接入前，请以官网当前展示的信息和官方文档为准。
 
 ## 目录
 
-- [SMS-Man 是什么？](#sms-man-是什么)
-- [SMS-Man 的基本工作方式](#sms-man-的基本工作方式)
-- [SMS-Man 主要功能](#sms-man-主要功能)
-- [一次性接码与号码租用有什么区别？](#一次性接码与号码租用有什么区别)
-- [支持的国家和应用](#支持的国家和应用)
-- [SMS-Man 接码使用步骤](#sms-man-接码使用步骤)
-- [SMS-Man API 开发接入](#sms-man-api-开发接入)
-- [价格、库存与退款](#价格库存与退款)
-- [隐私与安全注意事项](#隐私与安全注意事项)
-- [常见问题与故障排查](#常见问题与故障排查)
-- [官方资源链接](#官方资源链接)
-- [免责声明](#免责声明)
+- [SMS-Man：虚拟号码、在线接收短信与 API 使用指南](#sms-man虚拟号码在线接收短信与-api-使用指南)
+  - [目录](#目录)
+  - [SMS-Man 是什么？](#sms-man-是什么)
+  - [SMS-Man 的基本工作方式](#sms-man-的基本工作方式)
+  - [SMS-Man 主要功能](#sms-man-主要功能)
+  - [一次性接码与号码租用有什么区别？](#一次性接码与号码租用有什么区别)
+  - [支持的国家和应用](#支持的国家和应用)
+  - [SMS-Man 接码使用步骤](#sms-man-接码使用步骤)
+  - [SMS-Man API 开发接入](#sms-man-api-开发接入)
+    - [API v2.0](#api-v20)
+    - [兼容 API](#兼容-api)
+    - [API 安全建议](#api-安全建议)
+  - [价格、库存与退款](#价格库存与退款)
+  - [隐私与安全注意事项](#隐私与安全注意事项)
+  - [常见问题与故障排查](#常见问题与故障排查)
+  - [常见问题 FAQ](#常见问题-faq)
+    - [SMS-Man 是免费的吗？](#sms-man-是免费的吗)
+    - [SMS-Man 可以在线接收短信吗？](#sms-man-可以在线接收短信吗)
+    - [一个 SMS-Man 号码可以接收多条短信吗？](#一个-sms-man-号码可以接收多条短信吗)
+    - [SMS-Man 支持所有网站和应用吗？](#sms-man-支持所有网站和应用吗)
+    - [SMS-Man 提供 API 吗？](#sms-man-提供-api-吗)
+    - [SMS-Man API Key 在哪里查看？](#sms-man-api-key-在哪里查看)
+    - [SMS-Man 虚拟号码适合重要账户吗？](#sms-man-虚拟号码适合重要账户吗)
+    - [如何联系 SMS-Man 客服？](#如何联系-sms-man-客服)
+  - [官方资源链接](#官方资源链接)
+  - [免责声明](#免责声明)
 
 ## SMS-Man 是什么？
 
@@ -45,7 +59,7 @@ SMS-Man 是一个在线虚拟号码和短信接收平台。用户可以根据平
 5. 如果短信成功送达，在账户后台查看收到的消息。
 6. 根据官方规则取消、管理激活订单或结束号码租用。
 
-具体界面和操作规则请参考 [SMS-Man 官方帮助中心](https://sms-man.com/cn/help)。
+具体界面和操作规则请参考 [SMS-Man 官方帮助中心]([https://sms-man.com/help](https://sms-man.com/cn/help?ref=ceLde1noXEm-)。
 
 ## SMS-Man 主要功能
 
@@ -71,7 +85,7 @@ SMS-Man 是一个在线虚拟号码和短信接收平台。用户可以根据平
 | 可用情况 | 取决于国家、应用和库存 | 取决于国家、租期和库存 |
 | 适合场景 | 合规的一次性、低风险验证 | 确实需要持续接收短信的合规场景 |
 
-SMS-Man 官方帮助中心说明，**Receive SMS** 页面中的号码通常只能接收一条短信；如需接收多条短信，应查看号码租用服务。购买前仍应以当前产品说明为准：[官方帮助中心](https://sms-man.com/cn/help)。
+SMS-Man 官方帮助中心说明，**Receive SMS** 页面中的号码通常只能接收一条短信；如需接收多条短信，应查看号码租用服务。购买前仍应以当前产品说明为准：[官方帮助中心](https://sms-man.com/help?ref=ceLde1noXEm-)。
 
 ## 支持的国家和应用
 
@@ -79,7 +93,7 @@ SMS-Man 通过网站和 API 提供国家、地区及应用选择。号码库存�
 
 查询当前库存的方式：
 
-1. 打开 [SMS-Man 官方网站](https://sms-man.com/)。
+1. 打开 [SMS-Man 官方网站](https://go2lk.pages.dev/ea9735)。
 2. 选择需要的国家或地区。
 3. 选择目标应用或服务（如果列表中提供）。
 4. 下单前确认当前价格、库存和使用限制。
@@ -90,7 +104,7 @@ SMS-Man 通过网站和 API 提供国家、地区及应用选择。号码库存�
 
 官网界面可能调整，以下是根据官方帮助文档整理的一般流程：
 
-1. **注册或登录：** 打开 [sms-man.com](https://sms-man.com/) 并登录账户。
+1. **注册或登录：** 打开 [sms-man.com](https://go2lk.pages.dev/ea9735) 并登录账户。
 2. **确认产品信息：** 检查国家、应用、号码类型、价格及相关限制。
 3. **选择可用号码：** 通过官网当前提供的购买入口选择号码。
 4. **合规使用号码：** 仅在目标服务允许使用虚拟号码，且符合其服务条款的情况下填写号码。
@@ -219,18 +233,18 @@ SMS-Man 的主要用途之一就是通过在线账户查看发送到平台所提
 
 ### 如何联系 SMS-Man 客服？
 
-请通过 [SMS-Man 官网](https://sms-man.com/)和[官方帮助中心](https://sms-man.com/cn/help)提供的联系方式寻求支持。
+请通过 [SMS-Man 官网](https://go2lk.pages.dev/ea9735)和[官方帮助中心](https://sms-man.com/help?ref=ceLde1noXEm-)提供的联系方式寻求支持。
 
 ## 官方资源链接
 
 | 资源 | 地址 |
 |---|---|
-| 官方网站 | https://sms-man.com/ |
+| 官方网站 | [https://sms-man.com/](https://go2lk.pages.dev/ea9735) |
 | 官方帮助中心（中文） | https://sms-man.com/cn/help |
 | API v2.0（中文） | https://sms-man.com/cn/api |
 | 兼容 API（中文） | https://sms-man.com/cn/api/compatible |
 | Help Center（English） | https://sms-man.com/help |
-| API Documentation（English） | https://sms-man.com/api |
+| API Documentation（English） | [https://sms-man.com/api](https://sms-man.com/api?ref=ceLde1noXEm-) | 
 
 ## 免责声明
 

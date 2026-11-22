@@ -2,32 +2,45 @@
 
 **Languages:** [English](README.md) · [简体中文](README.zh-CN.md) · Tiếng Việt
 
-[SMS-Man](https://sms-man.com/) là nền tảng trực tuyến cung cấp số điện thoại ảo, dịch vụ nhận tin nhắn SMS và thuê số điện thoại trong các trường hợp được hỗ trợ. Repository này là **tài liệu hướng dẫn độc lập do cộng đồng biên soạn**, không phải mã nguồn hay tài liệu chính thức của SMS-Man.
+[SMS-Man](https://go2lk.pages.dev/ea9735) là nền tảng trực tuyến cung cấp số điện thoại ảo, dịch vụ nhận tin nhắn SMS và thuê số điện thoại trong các trường hợp được hỗ trợ. Repository này là **tài liệu hướng dẫn độc lập do cộng đồng biên soạn**, không phải mã nguồn hay tài liệu chính thức của SMS-Man.
 
 Tài liệu giúp bạn tìm hiểu SMS-Man là gì, cách nhận SMS trực tuyến, sự khác nhau giữa kích hoạt SMS một lần và thuê số, các tài liệu API chính thức cũng như những lưu ý về quyền riêng tư và bảo mật.
 
-- **Trang web chính thức:** https://sms-man.com/
-- **Trung tâm trợ giúp:** https://sms-man.com/help
-- **Tài liệu API:** https://sms-man.com/api
-- **Tài liệu Compatible API:** https://sms-man.com/api/compatible
+- **Trang web chính thức:** [https://sms-man.com/](https://go2lk.pages.dev/ea9735)
+- **Trung tâm trợ giúp:** [https://sms-man.com/help](https://sms-man.com/help?ref=ceLde1noXEm-)
+- **Tài liệu API:** [https://sms-man.com/api](https://sms-man.com/api?ref=ceLde1noXEm-)
+- **Tài liệu Compatible API:** [https://sms-man.com/api/compatible](https://sms-man.com/api/compatible?ref=ceLde1noXEm-)
 
 > **Lưu ý:** SMS-Man là dịch vụ thương mại của bên thứ ba. Quốc gia, ứng dụng được hỗ trợ, số lượng số điện thoại, giá, phương thức thanh toán, quy định sản phẩm và API có thể thay đổi. Hãy kiểm tra thông tin mới nhất trên trang web và tài liệu chính thức trước khi mua hoặc tích hợp.
 
 ## Mục lục
 
-- [SMS-Man là gì?](#sms-man-là-gì)
-- [SMS-Man hoạt động như thế nào?](#sms-man-hoạt-động-như-thế-nào)
-- [Các tính năng chính](#các-tính-năng-chính)
-- [SMS một lần và thuê số điện thoại](#sms-một-lần-và-thuê-số-điện-thoại)
-- [Quốc gia và dịch vụ được hỗ trợ](#quốc-gia-và-dịch-vụ-được-hỗ-trợ)
-- [Cách nhận SMS bằng SMS-Man](#cách-nhận-sms-bằng-sms-man)
-- [SMS-Man API dành cho nhà phát triển](#sms-man-api-dành-cho-nhà-phát-triển)
-- [Giá, tình trạng số và hoàn tiền](#giá-tình-trạng-số-và-hoàn-tiền)
-- [Quyền riêng tư và bảo mật](#quyền-riêng-tư-và-bảo-mật)
-- [Khắc phục sự cố](#khắc-phục-sự-cố)
-- [Câu hỏi thường gặp](#câu-hỏi-thường-gặp)
-- [Tài nguyên chính thức](#tài-nguyên-chính-thức)
-- [Tuyên bố miễn trừ trách nhiệm](#tuyên-bố-miễn-trừ-trách-nhiệm)
+- [SMS-Man: Số điện thoại ảo, nhận SMS trực tuyến và hướng dẫn API](#sms-man-số-điện-thoại-ảo-nhận-sms-trực-tuyến-và-hướng-dẫn-api)
+  - [Mục lục](#mục-lục)
+  - [SMS-Man là gì?](#sms-man-là-gì)
+  - [SMS-Man hoạt động như thế nào?](#sms-man-hoạt-động-như-thế-nào)
+  - [Các tính năng chính](#các-tính-năng-chính)
+  - [SMS một lần và thuê số điện thoại](#sms-một-lần-và-thuê-số-điện-thoại)
+  - [Quốc gia và dịch vụ được hỗ trợ](#quốc-gia-và-dịch-vụ-được-hỗ-trợ)
+  - [Cách nhận SMS bằng SMS-Man](#cách-nhận-sms-bằng-sms-man)
+  - [SMS-Man API dành cho nhà phát triển](#sms-man-api-dành-cho-nhà-phát-triển)
+    - [API v2.0](#api-v20)
+    - [Compatible API](#compatible-api)
+    - [Lưu ý bảo mật API](#lưu-ý-bảo-mật-api)
+  - [Giá, tình trạng số và hoàn tiền](#giá-tình-trạng-số-và-hoàn-tiền)
+  - [Quyền riêng tư và bảo mật](#quyền-riêng-tư-và-bảo-mật)
+  - [Khắc phục sự cố](#khắc-phục-sự-cố)
+  - [Câu hỏi thường gặp](#câu-hỏi-thường-gặp)
+    - [SMS-Man có miễn phí không?](#sms-man-có-miễn-phí-không)
+    - [Có thể nhận SMS trực tuyến bằng SMS-Man không?](#có-thể-nhận-sms-trực-tuyến-bằng-sms-man-không)
+    - [Một số SMS-Man có thể nhận nhiều tin nhắn không?](#một-số-sms-man-có-thể-nhận-nhiều-tin-nhắn-không)
+    - [SMS-Man có hỗ trợ mọi website và ứng dụng không?](#sms-man-có-hỗ-trợ-mọi-website-và-ứng-dụng-không)
+    - [SMS-Man có API không?](#sms-man-có-api-không)
+    - [Lấy API key SMS-Man ở đâu?](#lấy-api-key-sms-man-ở-đâu)
+    - [Số ảo SMS-Man có phù hợp với tài khoản quan trọng không?](#số-ảo-sms-man-có-phù-hợp-với-tài-khoản-quan-trọng-không)
+    - [Liên hệ hỗ trợ SMS-Man ở đâu?](#liên-hệ-hỗ-trợ-sms-man-ở-đâu)
+  - [Tài nguyên chính thức](#tài-nguyên-chính-thức)
+  - [Tuyên bố miễn trừ trách nhiệm](#tuyên-bố-miễn-trừ-trách-nhiệm)
 
 ## SMS-Man là gì?
 
@@ -46,7 +59,7 @@ Quy trình tổng quát:
 5. Nếu tin nhắn được gửi thành công, xem SMS trong trang quản lý tài khoản.
 6. Hủy hoặc quản lý lượt kích hoạt và thời gian thuê theo quy định hiện hành.
 
-Xem quy trình cập nhật tại [trung tâm trợ giúp SMS-Man](https://sms-man.com/help).
+Xem quy trình cập nhật tại [trung tâm trợ giúp SMS-Man](https://sms-man.com/help?ref=ceLde1noXEm-).
 
 ## Các tính năng chính
 
@@ -72,7 +85,7 @@ Theo tài liệu chính thức, SMS-Man có các tính năng được mô tả d
 | Tình trạng | Phụ thuộc quốc gia, dịch vụ và kho số | Phụ thuộc quốc gia, thời hạn và kho số |
 | Phù hợp với | Nhu cầu một lần, ít rủi ro và được phép | Quy trình hợp pháp cần nhận SMS liên tục |
 
-Theo trung tâm trợ giúp chính thức, số trong mục **Receive SMS** chỉ dùng để nhận một SMS; nếu cần nhận nhiều tin nhắn, hãy xem sản phẩm thuê số. Luôn kiểm tra mô tả sản phẩm hiện tại trước khi mua: [SMS-Man Help](https://sms-man.com/help).
+Theo trung tâm trợ giúp chính thức, số trong mục **Receive SMS** chỉ dùng để nhận một SMS; nếu cần nhận nhiều tin nhắn, hãy xem sản phẩm thuê số. Luôn kiểm tra mô tả sản phẩm hiện tại trước khi mua: [SMS-Man Help](https://sms-man.com/help?ref=ceLde1noXEm-).
 
 ## Quốc gia và dịch vụ được hỗ trợ
 
@@ -80,7 +93,7 @@ SMS-Man cho phép chọn quốc gia và dịch vụ thông qua website và API. 
 
 Để kiểm tra tình trạng hiện tại:
 
-1. Truy cập [website SMS-Man](https://sms-man.com/).
+1. Truy cập [website SMS-Man](https://go2lk.pages.dev/ea9735).
 2. Chọn quốc gia hoặc khu vực.
 3. Chọn ứng dụng hoặc dịch vụ cần dùng nếu có trong danh sách.
 4. Kiểm tra giá, số lượng và giới hạn trước khi đặt mua.
@@ -105,8 +118,8 @@ Nếu không nhận được SMS, hãy làm theo hướng dẫn chờ, hủy, th
 
 SMS-Man công bố tài liệu API để tích hợp phần mềm. Tài liệu chính thức mô tả API v2.0 và Compatible API. Trước khi phát triển, hãy đọc tài liệu tương ứng:
 
-- [Tài liệu API v2.0](https://sms-man.com/api)
-- [Tài liệu Compatible API](https://sms-man.com/api/compatible)
+- [Tài liệu API v2.0](https://sms-man.com/api?ref=ceLde1noXEm-)
+- [Tài liệu Compatible API](https://sms-man.com/api/compatible?ref=ceLde1noXEm-)
 
 ### API v2.0
 
@@ -127,7 +140,7 @@ Các thao tác được mô tả gồm:
 | List countries | Lấy danh sách quốc gia |
 | List services | Lấy danh sách dịch vụ |
 
-Yêu cầu API cần token của tài khoản. Tham số, phương thức HTTP, cấu trúc phản hồi và giá trị trạng thái phải tuân theo [tài liệu API chính thức](https://sms-man.com/api).
+Yêu cầu API cần token của tài khoản. Tham số, phương thức HTTP, cấu trúc phản hồi và giá trị trạng thái phải tuân theo [tài liệu API chính thức](https://sms-man.com/api?ref=ceLde1noXEm-).
 
 ### Compatible API
 
@@ -135,7 +148,7 @@ Tài liệu Compatible API chỉ định endpoint:
 
 `https://api.sms-man.com/stubs/handler_api.php`
 
-Giao diện này sử dụng tham số `api_key` và mô tả các thao tác như kiểm tra số dư, giá, yêu cầu số, lấy danh sách quốc gia và dịch vụ, cũng như cập nhật trạng thái kích hoạt. Xem [tài liệu Compatible API](https://sms-man.com/api/compatible) để biết định dạng yêu cầu và phản hồi chính xác.
+Giao diện này sử dụng tham số `api_key` và mô tả các thao tác như kiểm tra số dư, giá, yêu cầu số, lấy danh sách quốc gia và dịch vụ, cũng như cập nhật trạng thái kích hoạt. Xem [tài liệu Compatible API](https://sms-man.com/api/compatible?ref=ceLde1noXEm-) để biết định dạng yêu cầu và phản hồi chính xác.
 
 ### Lưu ý bảo mật API
 
@@ -162,7 +175,7 @@ Trước khi thanh toán, hãy xác nhận:
 - điều kiện hủy và hoàn tiền;
 - giới hạn số ảo của dịch vụ đích.
 
-Với câu hỏi về thanh toán hoặc hoàn tiền, hãy tham khảo [trung tâm trợ giúp SMS-Man](https://sms-man.com/help) và chính sách hiện hành trên website. Bài viết cũ hoặc README cộng đồng không thay thế chính sách ràng buộc của nhà cung cấp.
+Với câu hỏi về thanh toán hoặc hoàn tiền, hãy tham khảo [trung tâm trợ giúp SMS-Man](https://sms-man.com/help?ref=ceLde1noXEm-) và chính sách hiện hành trên website. Bài viết cũ hoặc README cộng đồng không thay thế chính sách ràng buộc của nhà cung cấp.
 
 ## Quyền riêng tư và bảo mật
 
@@ -208,7 +221,7 @@ Không. Danh sách dịch vụ có thể thay đổi và nền tảng bên thứ
 
 ### SMS-Man có API không?
 
-Có. SMS-Man công bố tài liệu API v2.0 và Compatible API tại [trang API chính thức](https://sms-man.com/api).
+Có. SMS-Man công bố tài liệu API v2.0 và Compatible API tại [trang API chính thức](https://sms-man.com/api?ref=ceLde1noXEm-).
 
 ### Lấy API key SMS-Man ở đâu?
 
@@ -220,7 +233,7 @@ Số tạm thời hoặc số thuê có thể không nằm trong quyền kiểm 
 
 ### Liên hệ hỗ trợ SMS-Man ở đâu?
 
-Sử dụng các kênh liên hệ được cung cấp trên [website SMS-Man](https://sms-man.com/) và [trung tâm trợ giúp](https://sms-man.com/help).
+Sử dụng các kênh liên hệ được cung cấp trên [website SMS-Man](https://sms-man.com/) và [trung tâm trợ giúp](https://sms-man.com/help?ref=ceLde1noXEm-).
 
 ## Tài nguyên chính thức
 
@@ -228,8 +241,8 @@ Sử dụng các kênh liên hệ được cung cấp trên [website SMS-Man](ht
 |---|---|
 | Website chính thức | https://sms-man.com/ |
 | Trung tâm trợ giúp | https://sms-man.com/help |
-| API v2.0 | https://sms-man.com/api |
-| Compatible API | https://sms-man.com/api/compatible |
+| API v2.0 | [https://sms-man.com/api](https://sms-man.com/api?ref=ceLde1noXEm-) | 
+| Compatible API | [https://sms-man.com/api/compatible](https://sms-man.com/api/compatible?ref=ceLde1noXEm-) |
 | Trung tâm trợ giúp tiếng Trung | https://sms-man.com/cn/help |
 | API tiếng Trung | https://sms-man.com/cn/api |
 

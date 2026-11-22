@@ -2,32 +2,45 @@
 
 **Languages:** English · [简体中文](README.zh-CN.md) · [Tiếng Việt](README.vi.md)
 
-[SMS-Man](https://sms-man.com/) is an online service for purchasing virtual phone numbers, receiving SMS verification messages, and renting numbers for supported use cases. This repository is an **independent, community-maintained information guide**. It is not the official SMS-Man source code or documentation.
+[SMS-Man](https://go2lk.pages.dev/ea9735) is an online service for purchasing virtual phone numbers, receiving SMS verification messages, and renting numbers for supported use cases. This repository is an **independent, community-maintained information guide**. It is not the official SMS-Man source code or documentation.
 
 Use this guide to understand how SMS-Man works, compare one-time SMS activation with number rental, review the official API options, and find practical safety considerations before using a virtual number.
 
-- **Official website:** https://sms-man.com/
-- **Official help center:** https://sms-man.com/help
-- **Official API documentation:** https://sms-man.com/api
-- **Compatible API documentation:** https://sms-man.com/api/compatible
+- **Official website:** [https://sms-man.com/](https://go2lk.pages.dev/ea9735)
+- **Official help center:** [https://sms-man.com/help](https://sms-man.com/help?ref=ceLde1noXEm-)
+- **Official API documentation:** [https://sms-man.com/api](https://sms-man.com/api?ref=ceLde1noXEm-)
+- **Compatible API documentation:** [https://sms-man.com/api/compatible](https://sms-man.com/api/compatible?ref=ceLde1noXEm-)
 
 > **Important:** SMS-Man is a third-party commercial service. Availability, supported countries and applications, prices, payment methods, product rules, and API behavior can change. Confirm current details on the official website before making a purchase or integrating the API.
 
 ## Contents
 
-- [What is SMS-Man?](#what-is-sms-man)
-- [How SMS-Man works](#how-sms-man-works)
-- [Main features](#main-features)
-- [One-time SMS vs. number rental](#one-time-sms-vs-number-rental)
-- [Countries and supported services](#countries-and-supported-services)
-- [How to receive an SMS with SMS-Man](#how-to-receive-an-sms-with-sms-man)
-- [SMS-Man API for developers](#sms-man-api-for-developers)
-- [Pricing, availability, and refunds](#pricing-availability-and-refunds)
-- [Privacy and security considerations](#privacy-and-security-considerations)
-- [Troubleshooting](#troubleshooting)
-- [Frequently asked questions](#frequently-asked-questions)
-- [Official resources](#official-resources)
-- [Disclaimer](#disclaimer)
+- [SMS-Man: Virtual Phone Numbers, Online SMS Reception \& API Guide](#sms-man-virtual-phone-numbers-online-sms-reception--api-guide)
+  - [Contents](#contents)
+  - [What is SMS-Man?](#what-is-sms-man)
+  - [How SMS-Man works](#how-sms-man-works)
+  - [Main features](#main-features)
+  - [One-time SMS vs. number rental](#one-time-sms-vs-number-rental)
+  - [Countries and supported services](#countries-and-supported-services)
+  - [How to receive an SMS with SMS-Man](#how-to-receive-an-sms-with-sms-man)
+  - [SMS-Man API for developers](#sms-man-api-for-developers)
+    - [API v2.0](#api-v20)
+    - [Compatible API](#compatible-api)
+    - [API security checklist](#api-security-checklist)
+  - [Pricing, availability, and refunds](#pricing-availability-and-refunds)
+  - [Privacy and security considerations](#privacy-and-security-considerations)
+  - [Troubleshooting](#troubleshooting)
+  - [Frequently asked questions](#frequently-asked-questions)
+    - [Is SMS-Man free?](#is-sms-man-free)
+    - [Can I receive SMS online without a physical SIM card?](#can-i-receive-sms-online-without-a-physical-sim-card)
+    - [Can one SMS-Man number receive multiple messages?](#can-one-sms-man-number-receive-multiple-messages)
+    - [Does SMS-Man support every website or app?](#does-sms-man-support-every-website-or-app)
+    - [Does SMS-Man provide an API?](#does-sms-man-provide-an-api)
+    - [Where can I find my API key?](#where-can-i-find-my-api-key)
+    - [Are SMS-Man numbers suitable for important accounts?](#are-sms-man-numbers-suitable-for-important-accounts)
+    - [Where can I get support?](#where-can-i-get-support)
+  - [Official resources](#official-resources)
+  - [Disclaimer](#disclaimer)
 
 ## What is SMS-Man?
 
@@ -46,7 +59,7 @@ The general workflow is:
 5. View the incoming message in the account dashboard, if delivery succeeds.
 6. Cancel or manage the activation according to the current service rules.
 
-For the exact current flow, consult the [official help center](https://sms-man.com/help).
+For the exact current flow, consult the [official help center](https://sms-man.com/help?ref=ceLde1noXEm-).
 
 ## Main features
 
@@ -72,7 +85,7 @@ The list above is a summary, not a promise that every feature is available in ev
 | Availability | Depends on country, service, and stock | Depends on country, rental term, and stock |
 | Best suited to | Low-risk, one-off use where permitted | A legitimate workflow that needs continued access |
 
-The official help center says numbers in the **Receive SMS** section are intended for one SMS, while rented numbers are the option for receiving more than one SMS. Always check the current product description before ordering: [SMS-Man Help](https://sms-man.com/help).
+The official help center says numbers in the **Receive SMS** section are intended for one SMS, while rented numbers are the option for receiving more than one SMS. Always check the current product description before ordering: [SMS-Man Help](https://sms-man.com/help?ref=ceLde1noXEm-).
 
 ## Countries and supported services
 
@@ -80,7 +93,7 @@ SMS-Man provides country and service selection through its website and API. The 
 
 To check current availability:
 
-1. Open the official [SMS-Man website](https://sms-man.com/).
+1. Open the official [SMS-Man website](https://go2lk.pages.dev/ea9735).
 2. Select the relevant country or region.
 3. Select the intended service, if it is listed.
 4. Review the current price and availability before ordering.
@@ -91,7 +104,7 @@ Do not rely on old screenshots, third-party lists, or country lists copied into 
 
 The exact interface may change, but the documented process generally follows these steps:
 
-1. **Register or sign in** at [sms-man.com](https://sms-man.com/).
+1. **Register or sign in** at [sms-man.com](https://go2lk.pages.dev/ea9735).
 2. **Check the product details.** Confirm the selected country, service, number type, price, and any restrictions.
 3. **Select an available number** using the official interface.
 4. **Use the number only for a permitted purpose.** Enter it on the destination service only if that service allows virtual numbers and the activity complies with its terms.
@@ -105,8 +118,8 @@ If a message does not arrive, use the cancellation, retry, or support process de
 
 SMS-Man publishes API documentation for software integrations. The official documentation currently describes an API v2.0 interface and a compatible API. Read the provider's documentation before writing an integration:
 
-- [API v2.0 documentation](https://sms-man.com/api)
-- [Compatible API documentation](https://sms-man.com/api/compatible)
+- [API v2.0 documentation](https://sms-man.com/api?ref=ceLde1noXEm-)
+- [Compatible API documentation](https://sms-man.com/api/compatible?ref=ceLde1noXEm-)
 
 ### API v2.0
 
@@ -127,7 +140,7 @@ The documented operations include:
 | List countries | Retrieve the supported country list |
 | List services | Retrieve the supported service list |
 
-Requests use an account API token. The exact parameters, HTTP method, response format, and status values are defined in the [official API reference](https://sms-man.com/api).
+Requests use an account API token. The exact parameters, HTTP method, response format, and status values are defined in the [official API reference](https://sms-man.com/api?ref=ceLde1noXEm-).
 
 ### Compatible API
 
@@ -135,7 +148,7 @@ The compatible API documentation specifies this endpoint:
 
 `https://api.sms-man.com/stubs/handler_api.php`
 
-It documents an `api_key` parameter and actions such as balance lookup, price lookup, number requests, country and service lists, and activation status operations. Refer to the [compatible API reference](https://sms-man.com/api/compatible) for the exact request and response formats.
+It documents an `api_key` parameter and actions such as balance lookup, price lookup, number requests, country and service lists, and activation status operations. Refer to the [compatible API reference](https://sms-man.com/api/compatible?ref=ceLde1noXEm-) for the exact request and response formats.
 
 ### API security checklist
 
@@ -162,7 +175,7 @@ Before paying, verify:
 - cancellation and refund conditions;
 - any limitations imposed by the destination service.
 
-For billing or refund questions, use the provider's current [help center](https://sms-man.com/help) and official policy pages. A historical blog post or a community README should not be treated as the binding refund policy.
+For billing or refund questions, use the provider's current [help center]([https://sms-man.com/help](https://sms-man.com/help?ref=ceLde1noXEm-) and official policy pages. A historical blog post or a community README should not be treated as the binding refund policy.
 
 ## Privacy and security considerations
 
@@ -208,7 +221,7 @@ No. The available service list changes, and third-party platforms may reject vir
 
 ### Does SMS-Man provide an API?
 
-Yes. SMS-Man publishes API v2.0 and compatible API documentation. See the [official API page](https://sms-man.com/api).
+Yes. SMS-Man publishes API v2.0 and compatible API documentation. See the [official API page](https://sms-man.com/api?ref=ceLde1noXEm-).
 
 ### Where can I find my API key?
 
@@ -220,17 +233,17 @@ A temporary or rented number may not remain under your control indefinitely. For
 
 ### Where can I get support?
 
-Use the contact and support options linked from the [official SMS-Man website](https://sms-man.com/) and [help center](https://sms-man.com/help).
+Use the contact and support options linked from the [official SMS-Man website](https://sms-man.com/) and [help center](https://sms-man.com/help?ref=ceLde1noXEm-).
 
 ## Official resources
 
 | Resource | Link |
 |---|---|
-| Official website | https://sms-man.com/ |
-| Help center | https://sms-man.com/help |
-| API v2.0 | https://sms-man.com/api |
-| Compatible API | https://sms-man.com/api/compatible |
-| Chinese help center | https://sms-man.com/cn/help |
+| Official website | [https://sms-man.com/](https://go2lk.pages.dev/ea9735) |
+| Help center |[https://sms-man.com/help](https://sms-man.com/help?ref=ceLde1noXEm-) |
+| API v2.0 | [https://sms-man.com/api](https://sms-man.com/api?ref=ceLde1noXEm-) | 
+| Compatible API | [https://sms-man.com/api/compatible](https://sms-man.com/api/compatible?ref=ceLde1noXEm-) |
+| Chinese help center | [https://sms-man.com/help](https://sms-man.com/help?ref=ceLde1noXEm-) |
 | Chinese API documentation | https://sms-man.com/cn/api |
 
 ## Disclaimer
